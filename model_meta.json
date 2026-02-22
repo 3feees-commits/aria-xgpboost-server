@@ -1,0 +1,34 @@
+{
+  "feature_cols": [
+    "fast_ema",
+    "slow_ema",
+    "ema_diff",
+    "adx",
+    "di_plus",
+    "di_minus",
+    "atr",
+    "rsi",
+    "close1",
+    "close2",
+    "close3",
+    "spread",
+    "direction",
+    "volatility_ratio",
+    "trend_strength",
+    "momentum"
+  ],
+  "n_samples": 50000,
+  "sl_model": {
+    "mae_pips": 3.49,
+    "r2_score": 0.9444,
+    "n_estimators": 500
+  },
+  "tp_model": {
+    "mae_pips": 7.843,
+    "r2_score": 0.9527,
+    "n_estimators": 500
+  },
+  "version": "3.0.0",
+  "symbol": "EURUSD",
+  "pip_value": 0.0001
+}
