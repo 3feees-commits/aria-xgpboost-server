@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aria-xgboost-server
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: PORT
+        value: 8000
+    healthCheckPath: /health
+    autoDeploy: true
